@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderComponent" customModule="MVVM" customModuleProvider="target">
+            <connections>
+                <outlet property="LabelHeader" destination="QgM-46-ifB" id="Ybc-8h-juF"/>
+                <outlet property="btnBackHeader" destination="NuO-2F-kTG" id="Pjl-X6-68F"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C8r-CL-gkc">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuO-2F-kTG">
+                            <rect key="frame" x="18" y="35" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="5Wm-uK-9oQ"/>
+                                <constraint firstAttribute="height" constant="32" id="7OK-Nm-tyv"/>
+                            </constraints>
+                            <state key="normal" title="Button" image="back0"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgM-46-ifB">
+                            <rect key="frame" x="66" y="40" width="298" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="QgM-46-ifB" secondAttribute="trailing" constant="50" id="7DS-Ot-GJR"/>
+                        <constraint firstItem="QgM-46-ifB" firstAttribute="leading" secondItem="NuO-2F-kTG" secondAttribute="trailing" constant="16" id="H5s-rn-1bF"/>
+                        <constraint firstItem="NuO-2F-kTG" firstAttribute="top" secondItem="C8r-CL-gkc" secondAttribute="top" constant="35" id="KtN-nX-Avo"/>
+                        <constraint firstItem="QgM-46-ifB" firstAttribute="top" secondItem="C8r-CL-gkc" secondAttribute="top" constant="40" id="bi3-C9-KpY"/>
+                        <constraint firstItem="NuO-2F-kTG" firstAttribute="leading" secondItem="C8r-CL-gkc" secondAttribute="leading" constant="18" id="swu-Fv-9cU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="C8r-CL-gkc" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="GA0-3m-o3x"/>
+                <constraint firstAttribute="bottom" secondItem="C8r-CL-gkc" secondAttribute="bottom" id="KpQ-7u-2gs"/>
+                <constraint firstItem="C8r-CL-gkc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ldb-fw-wL7"/>
+                <constraint firstItem="C8r-CL-gkc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="mty-5J-hXK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="47.826086956521742" y="34.821428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back0" width="512" height="512"/>
+    </resources>
+</document>
