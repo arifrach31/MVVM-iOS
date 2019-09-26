@@ -12,5 +12,6 @@ class LoginModel: NSObject {
     var ok: String?
     var message: String?
     var status: Int?
+    
 }
 
